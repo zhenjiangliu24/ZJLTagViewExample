@@ -1,7 +1,7 @@
 # ZJLTagViewExample
 A very useful editable tag view for objective-c
 ![Alt text](/screenshot.png =320*550 "screen shot")
-<img src="/master/screenshot.png" alt="screen shot1" style="width:320px;>
+<img src="/screenshot.png" alt="screen shot1" style="width:320px;>
 ![Alt text](/screenshot2.png?raw=true "screen shot")
 
 There is an array which contains all the tag object, each of the object should consform to protocol: ZJLTagListViewObject.
