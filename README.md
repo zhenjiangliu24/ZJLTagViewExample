@@ -1,6 +1,6 @@
 # ZJLTagViewExample
 A very useful editable tag view for objective-c
-![Alt text](/screenshot.png |width=300 "screen shot")
+![Alt text](/screenshot.png =320*550 "screen shot")
 <img src="/master/screenshot.png" alt="screen shot1" style="width:320px;>
 ![Alt text](/screenshot2.png?raw=true "screen shot")
 
