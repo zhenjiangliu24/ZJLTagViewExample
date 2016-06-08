@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="joE-Zt-Xcd">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--ZJLTagViewExample-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fRm-al-MPh" customClass="ZJLTagListView">
+                                <rect key="frame" x="0.0" y="182" width="600" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iKf-vd-PoH">
+                                <rect key="frame" x="162" y="106" width="276" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="276" id="qnY-yf-ofB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iKf-vd-PoH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="42" id="0iO-gX-lqR"/>
+                            <constraint firstItem="fRm-al-MPh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4hz-yH-gQf"/>
+                            <constraint firstItem="fRm-al-MPh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="118" id="96z-WB-cDu"/>
+                            <constraint firstItem="iKf-vd-PoH" firstAttribute="centerX" secondItem="fRm-al-MPh" secondAttribute="centerX" id="aX3-tk-83o"/>
+                            <constraint firstItem="fRm-al-MPh" firstAttribute="top" secondItem="iKf-vd-PoH" secondAttribute="bottom" constant="36" id="eAM-fG-OrM"/>
+                            <constraint firstItem="fRm-al-MPh" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="idW-Rn-Vag"/>
+                            <constraint firstItem="fRm-al-MPh" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:2" id="rbq-Rj-bMb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="ZJLTagViewExample" id="0gg-ut-dvK"/>
+                    <connections>
+                        <outlet property="ZJLTagListView" destination="fRm-al-MPh" id="qHB-iX-CJG"/>
+                        <outlet property="tagNameLabel" destination="iKf-vd-PoH" id="Uwh-2K-NbA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1023" y="356"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="kx6-pe-Qt6">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="joE-Zt-Xcd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IFa-Hp-NcV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="i2e-PR-DA3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vqK-vv-cwf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="349"/>
+        </scene>
+    </scenes>
+</document>
