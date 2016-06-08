@@ -1,5 +1,6 @@
 # ZJLTagViewExample
 A very useful editable tag view for objective-c
+![Alt text](/screenshot.png?raw=true "screen shot")
 
 There is an array which contains all the tag object, each of the object should consform to protocol: ZJLTagListViewObject.
 Initialize the tag view by set all its attributes,
