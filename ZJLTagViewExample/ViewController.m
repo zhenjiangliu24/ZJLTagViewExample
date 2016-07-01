@@ -13,7 +13,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *tagNameLabel;
 @property (weak, nonatomic) IBOutlet ZJLTagListView *ZJLTagListView;
 
-@property (nonatomic, copy) NSMutableArray *tagList;
+@property (nonatomic, strong) NSMutableArray *tagList;
 @end
 
 @implementation ViewController
@@ -24,7 +24,12 @@
     TagObject *tag1 = [[TagObject alloc]initWithTagName:@"Montreal"];
     TagObject *tag2 = [[TagObject alloc]initWithTagName:@"Toronto"];
     TagObject *tag3 = [[TagObject alloc]initWithTagName:@"Vancouver"];
-    self.tagList = [NSMutableArray arrayWithObjects:tag1,tag2,tag3, nil];
+    TagObject *tag4 = [[TagObject alloc]initWithTagName:@"Saint John"];
+    TagObject *tag5 = [[TagObject alloc]initWithTagName:@"Ottawa"];
+    TagObject *tag6 = [[TagObject alloc]initWithTagName:@"Quebec city"];
+    TagObject *tag7 = [[TagObject alloc]initWithTagName:@"Winnipeg"];
+    TagObject *tag8 = [[TagObject alloc]initWithTagName:@"Calgary"];
+    self.tagList = [NSMutableArray arrayWithObjects:tag1,tag2,tag3,tag4,tag5,tag6,tag7,tag8, nil];
     [self initZJLTagView];
 }
 
@@ -38,6 +43,9 @@
     self.ZJLTagListView.tagViewType = ZJLTAGNORMAL;
     self.ZJLTagListView.delegate = self;
     self.ZJLTagListView.is_can_add = NO;
+    self.ZJLTagListView.tagViewBackgroundColor = [UIColor lightGrayColor];
+    self.ZJLTagListView.tagLabelBorderColor = [UIColor blackColor];
+    self.ZJLTagListView.tagBorderWidth = 3.0;
     [self.ZJLTagListView createTagViewWith:[self.tagList copy]];
 }
 
